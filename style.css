@@ -265,3 +265,53 @@ RESPONSIVE
 #menu button{width:52px;height:52px}
 .fade{animation:fade .45s cubic-bezier(.22,.61,.36,1)}
 @media(max-width:768px){#menu button{width:42px;height:42px;font-size:15px}.content{width:92%!important;padding:26px!important}#info{right:10px;top:10px}}
+
+
+/* ===== Redesign Tahap 2 Overrides ===== */
+:root{
+ --glass:rgba(255,255,255,.08);
+ --gold:#FFD700;
+}
+#cover{padding:24px}
+.content{
+ width:min(92%,620px)!important;
+ padding:clamp(24px,4vw,52px)!important;
+ border-radius:28px!important;
+ background:var(--glass)!important;
+ backdrop-filter:blur(20px)!important;
+ box-shadow:0 20px 60px rgba(0,0,0,.45)!important;
+}
+.content h1{font-size:clamp(2rem,6vw,4rem)!important;line-height:1.1}
+.content h3{font-size:clamp(.85rem,2vw,1rem)!important}
+#startBtn{
+ border-radius:999px!important;
+ padding:15px 34px!important;
+ font-weight:600;
+}
+#slide{
+ width:100%!important;
+ height:100%!important;
+ max-width:100%!important;
+ max-height:100%!important;
+ object-fit:contain;
+ padding:12px;
+}
+#info{
+ left:auto!important;
+ right:12px;
+ top:12px;
+ border-radius:999px;
+ padding:8px 12px;
+}
+#menu{
+ bottom:max(14px,env(safe-area-inset-bottom));
+ background:rgba(20,20,20,.35);
+ backdrop-filter:blur(18px);
+ border-radius:999px;
+ padding:8px 12px;
+}
+#menu button{width:46px;height:46px}
+@media(max-width:768px){
+ #menu button{width:40px;height:40px;font-size:15px}
+ .content{padding:24px!important}
+}
