@@ -88,7 +88,7 @@ COVER
 }
 
 .content h1 {
-    font-size: 50px;
+    font-size:clamp(14px,2vw,22px);
     color: #FFD700;
     line-height: 70px;
     margin-bottom: 20px;
