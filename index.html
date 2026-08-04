@@ -5,146 +5,83 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Forum Komunikasi Warga PTKA 2026</title>
 
-    <meta name="theme-color" content="#111111">
-
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- =========================
-     LOADING
-========================== -->
+    <!-- Loading -->
+    <div id="loading">
+        <div class="loader"></div>
+        <h2>Memuat Presentasi...</h2>
+    </div>
 
-<div id="loading">
+    <!-- Cover -->
+    <section id="cover">
 
-    <div class="loader"></div>
+        <div class="overlay"></div>
 
-    <h2>Memuat Presentasi...</h2>
+        <div class="content">
 
-</div>
+            <h3>FORUM KOMUNIKASI WARGA PTKA 2026</h3>
 
-<!-- =========================
-     COVER
-========================== -->
+            <h1>PRATISANTANA<br>TANGKAS KORI AGUNG</h1>
 
-<section id="cover">
+            <p>Bali dan Nusantara</p>
 
-    <div class="cover-bg"></div>
-
-    <div class="overlay"></div>
-
-    <div class="content">
-
-        <div class="logo-circle">
-
-            🛕
+            <button id="startBtn">▶ Mulai Presentasi</button>
 
         </div>
 
-        <h3>FORUM KOMUNIKASI WARGA</h3>
+    </section>
 
-        <h1>
+    <!-- Viewer -->
+    <section id="viewer">
 
-            PTKA 2026
+        <img id="slide">
 
-        </h1>
+        <div id="info">
 
-        <p>
+            <span id="judul">Forum Komunikasi Warga PTKA 2026</span>
 
-            Bali dan Nusantara
+            <span id="nomor">1 / 31</span>
 
-        </p>
+        </div>
 
-        <button id="startBtn">
+        <div id="progress">
 
-            ▶ Mulai Presentasi
+            <div id="bar"></div>
 
-        </button>
+        </div>
 
-    </div>
+        <div id="menu">
 
-</section>
+            <button onclick="prevSlide()">⏮</button>
 
-<!-- =========================
-     VIEWER
-========================== -->
+            <button onclick="playPause()" id="playBtn">⏸</button>
 
-<section id="viewer">
+            <button onclick="nextSlide()">⏭</button>
 
-    <div id="slideArea">
+            <button onclick="toggleFullscreen()">⛶</button>
 
-        <img
-            id="slide"
-            draggable="false"
-            alt="Slide Presentasi">
+        </div>
 
-    </div>
+    </section>
 
-    <div id="info">
+    <audio id="music" loop>
 
-        <span id="judul">
-
-            Forum Komunikasi Warga PTKA 2026
-
-        </span>
-
-        <span id="nomor">
-
-            1 / 31
-
-        </span>
-
-    </div>
-
-    <div id="menu">
-
-        <button
-            id="prevBtn"
-            onclick="prevSlide()">
-
-            ⏮
-
-        </button>
-
-        <button
-            id="nextBtn"
-            onclick="nextSlide()">
-
-            ⏭
-
-        </button>
-
-        <button
-            id="fullscreenBtn"
-            onclick="toggleFullscreen()">
-
-            ⛶
-
-        </button>
-
-    </div>
-
-</section>
-
-<audio id="music" loop>
-
-    <source
-        src="assets/audio/backsound.mp3"
-        type="audio/mpeg">
+<source src="assets/audio/backsound.mp3">
 
 </audio>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
