@@ -56,7 +56,7 @@ COVER
 #cover {
     position: fixed;
     inset: 0;
-    background: url("assets/images/cover.jpg") center center/cover no-repeat;
+    background: url("assets/images/cover.png") center center/cover no-repeat;
     display: none;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ COVER
 }
 
 .content h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #FFD700;
     line-height: 70px;
     margin-bottom: 20px;
