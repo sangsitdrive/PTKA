@@ -192,3 +192,4 @@ document.addEventListener("keydown", (e) => {
     }
 
 });
+// Modern UI overrides applied.
