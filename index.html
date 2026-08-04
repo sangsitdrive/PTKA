@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forum PTKA 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Loading -->
+    <div id="loading">
+        <div class="loader"></div>
+        <h2>Memuat Presentasi...</h2>
+    </div>
+
+    <!-- Cover -->
+    <section id="cover">
+
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <h3>FORUM KOMUNIKASI WARGA</h3>
+
+            <h1>PRATISANTANA<br>TANGKAS KORI AGUNG</h1>
+
+            <p>Bali dan Nusantara</p>
+
+            <button id="startBtn">▶ Mulai Presentasi</button>
+
+        </div>
+
+    </section>
+
+    <!-- Viewer -->
+    <section id="viewer">
+
+        <img id="slide">
+
+        <div id="info">
+
+            <span id="judul">Forum PTKA 2026</span>
+
+            <span id="nomor">1 / 31</span>
+
+        </div>
+
+        <div id="progress">
+
+            <div id="bar"></div>
+
+        </div>
+
+        <div id="menu">
+
+            <button onclick="prevSlide()">⏮</button>
+
+            <button onclick="playPause()" id="playBtn">⏸</button>
+
+            <button onclick="nextSlide()">⏭</button>
+
+            <button onclick="toggleFullscreen()">⛶</button>
+
+        </div>
+
+    </section>
+
+    <audio id="music" loop>
+
+<source src="assets/audio/backsound.mp3">
+
+</audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

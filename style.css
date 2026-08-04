@@ -1,0 +1,254 @@
+/* =====================================
+   FORUM PTKA 2026
+   STYLE.CSS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+/* =======================
+LOADING
+======================= */
+
+#loading {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #333;
+    border-top: 6px solid gold;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =======================
+COVER
+======================= */
+
+#cover {
+    position: fixed;
+    inset: 0;
+    background: url("assets/images/cover.jpg") center center/cover no-repeat;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .65);
+    backdrop-filter: blur(5px);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    width: 850px;
+    padding: 60px;
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, .15);
+}
+
+.content h3 {
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.content h1 {
+    font-size: 60px;
+    color: #FFD700;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+#startBtn {
+    padding: 18px 45px;
+    border: none;
+    border-radius: 40px;
+    background: gold;
+    color: #111;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#startBtn:hover {
+    transform: scale(1.05);
+}
+
+
+/* =======================
+VIEWER
+======================= */
+
+#viewer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000;
+}
+
+#slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(255, 215, 0, .3);
+}
+
+
+/* =======================
+INFO
+======================= */
+
+#info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, .45);
+    padding: 15px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+#judul {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#nomor {
+    color: #FFD700;
+}
+
+
+/* =======================
+PROGRESS
+======================= */
+
+#progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: #222;
+}
+
+#bar {
+    width: 0;
+    height: 100%;
+    background: gold;
+}
+
+
+/* =======================
+MENU
+======================= */
+
+#menu {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+#menu button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #FFD700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#menu button:hover {
+    transform: scale(1.1);
+}
+
+
+/* =======================
+ANIMASI SLIDE
+======================= */
+
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.08);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+/* =======================
+RESPONSIVE
+======================= */
+
+@media(max-width:768px) {
+    .content {
+        width: 90%;
+        padding: 30px;
+    }
+    .content h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+    #slide {
+        max-width: 100%;
+    }
+}
