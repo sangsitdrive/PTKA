@@ -69,36 +69,36 @@ COVER
     backdrop-filter: blur(5px);
 }
 
-.content {
+.content{
     position: relative;
     z-index: 2;
-    width: 850px;
-    padding: 60px;
+    width: min(92%, 850px);
+    padding: 25px;
     text-align: center;
     border-radius: 25px;
-    background: rgba(255, 255, 255, .05);
+    background: rgba(255,255,255,.05);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, .15);
+    border:1px solid rgba(255,255,255,.15);
 }
 
-.content h3 {
-    font-size: 24px;
-    letter-spacing: 4px;
-    font-weight: 300;
-    margin-bottom: 15px;
+.content h3{
+    font-size:22px;
+    letter-spacing:8px;
+    font-weight:300;
+    margin-bottom:20px;
 }
 
-.content h1 {
-    font-size: 60px;
-    color: #FFD700;
-    line-height: 70px;
-    margin-bottom: 20px;
-    font-weight: 700;
+.content h1{
+    font-size:58px;
+    color:#FFD700;
+    line-height:1.15;
+    margin-bottom:20px;
+    font-weight:700;
 }
 
-.content p {
-    font-size: 22px;
-    margin-bottom: 40px;
+.content p{
+    font-size:24px;
+    margin-bottom:35px;
 }
 
 #startBtn {
@@ -235,89 +235,50 @@ ANIMASI SLIDE
 
 
 /* =======================
-RESPONSIVE
+RESPONSIVE HP
 ======================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    .content {
-        width: 95%;
-        padding: 25px;
+    .content{
+        width:95%;
+        padding:22px;
     }
 
-    .content h3 {
-        font-size: 15px;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
+    .content h3{
+        font-size:11px;
+        letter-spacing:6px;
+        line-height:1.8;
     }
 
-    .content h1 {
-        font-size: 28px;
-        line-height: 36px;
-        margin-bottom: 15px;
+    .content h1{
+        font-size:18vw;
+        line-height:1.05;
+        word-break:keep-all;
     }
 
-    .content p {
-        font-size: 16px;
-        margin-bottom: 25px;
+    .content p{
+        font-size:16px;
+        margin-bottom:25px;
     }
 
-    #startBtn {
-        padding: 14px 30px;
-        font-size: 18px;
-    }
-
-    #slide {
-        max-width: 100%;
-        max-height: 85%;
-    }
-
-    #info {
-        top: 10px;
-        left: 10px;
-        padding: 10px 15px;
-    }
-
-    #judul {
-        font-size: 18px;
-    }
-
-    #menu {
-        gap: 10px;
-        bottom: 15px;
-    }
-
-    #menu button {
-        width: 45px;
-        height: 45px;
-        font-size: 16px;
+    #startBtn{
+        width:100%;
+        padding:16px;
+        font-size:24px;
     }
 
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px){
 
-    .content {
-        padding: 20px;
+    .content h3{
+        font-size:10px;
+        letter-spacing:5px;
     }
 
-    .content h3 {
-        font-size: 13px;
-        letter-spacing: 1px;
-    }
-
-    .content h1 {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    .content p {
-        font-size: 14px;
-    }
-
-    #startBtn {
-        font-size: 16px;
-        padding: 12px 24px;
+    .content h1{
+        font-size:17vw;
     }
 
 }
